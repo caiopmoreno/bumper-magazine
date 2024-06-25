@@ -1,0 +1,17 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.home ul, li{
+  color: black;
+
+}
+
+p{
+  font-size: 25px;
+}
+
+.home a{
+  color: red;
+}

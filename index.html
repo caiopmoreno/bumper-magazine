@@ -7,22 +7,43 @@
   <title>Bumper Magazine - Sua Magazine Favorita</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="home">
   <div id="header"></div>
+  <link rel="stylesheet" href="css/style.css">
   
-  <p>Aqui entra o conteúdo da página. Essa é a página home.</p>
+  <div class="home">
+    <p>Aqui entra o conteúdo da página. Essa é a página home.</p>
+    <ul>
+      <li>
+        Item 1
+      </li>
+      <li>
+        Item 2
+      </li>
+      <li>
+        <a href="pages/statics/faq.html">FAQ</a>
+      </li>
+    </ul>
+  </div>
+
+  <p>Obs 1: Os links do header ainda estão puxando o css do footer, por não terem o seu próprio arquivo</p>
+  <p>Obs 2: Todos os conteiners deverão ter identificação bem definida, senão um css se sobrescreve a outro</p>
+  <p>Obs 3: Para resolver a questão de precedência, toda vez que puxarmos o footer e o header, deveremos logo abaixo chamar mais uma vez o link:css da página atual</p>
+  <p>Obs 4: Vamos usar o paddin padrão de 80px nas laterais</p>
+  <p>Obs 5: Por padrão, não criaremos mais pastas e vamos sempre voltar duas, em todos os docs. Vamos sempre direcionar às pastas como quem vem da raiz para o local do elemenento</p>
 
   <a href="pages/statics/faq.html">FAQ</a>
 
 
   
   <div id="footer"></div>
+  <link rel="stylesheet" href="css/style.css">
 
   <script src="js/components/header.js"></script>
   <script src="js/components/footer.js"></script>
   <script src="js/script.js"></script>
 
 
-  
-</body>
-</html>
+
+</body>     
+</html>     

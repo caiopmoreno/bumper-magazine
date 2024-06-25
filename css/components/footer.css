@@ -1,21 +1,43 @@
 /* GERAL */
-p, h1, h2, h3, h4, a, ul, li{
+#foot p, h1, h2, h3, h4, a, ul, li{
   font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
   padding: 0px;
   margin: 0px;
   color: white;
 }
 
-* a{
+#foot a{
   text-decoration: none;
 }
 
-* a:hover{
+#foot a:hover{
   color: rgb(255, 203, 107);
 }
 
-* ul{
+#foot ul{
   list-style: none;
+  font-size: 13px;
+  padding-top: 10px;
+  line-height: 1.4em;
+}
+
+#foot h2{
+  font-size: 14px;
+}
+
+#foot h3{
+  font-size: 13px;
+}
+
+#foot p{
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+#foot hr{
+  margin: 20px 0px;
+  width: 90%;
+  border-color: #ffffff40;
 }
 
 
@@ -24,34 +46,59 @@ p, h1, h2, h3, h4, a, ul, li{
 #topo{
   background-color: #2357A8;
   display: flex;
+  padding: 40px 80px;
 }
 
 /* TOPO - Logo e Redes */
 
 #topo-logo-redes{
-  width: 30%;
+  width: 25%;
+  
 }
 
+/* Imgs do Redes e Logo */
 #topo-logo-redes img{
   width: 275px;
+  margin-left: px;
 }
 
+/* Logo no rodapé */
+.topo-logo{
+  margin-left: -20px;
+}
 
 #topo-links{
-  width: 70%;
+  width: 75%;
+  justify-content: space-around;
+  align-items: first baseline;
 }
 
+/* Redes DIV */
 .topo-redes{
   display: flex;
+  width: 100%;
 }
 
+/* Redes margin negativo do primeiro */
+.topo-redes > *:first-child {
+  margin-left: -4px;
+}
+
+/* Redes IMG */
 .topo-redes img{
   height: 50px;
+  padding: 15px 0px 10px 0px;
+  margin-right: 0px;
 }
 
 #topo-links{
   display: flex;
 }
+
+#topo-logo-redes .cta-redes p{
+  font-size: 10px;
+}
+
 
 
 /* MEIO */
@@ -60,22 +107,66 @@ p, h1, h2, h3, h4, a, ul, li{
   background-color: #194994;
   display: flex;
   justify-content: space-between;
+  padding: 20px 80px;
 }
 
 .topo-email-wpp{
   display: flex;
   gap: 5px;
+  align-items: end;
 }
+
+.meio-selos img{
+  height: 32px;
+  padding-top: 10px;
+}
+
+/* Ícone de Link */
+.link-icon img{
+  border-radius: 2px;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.email-icon img{
+  width: 18px;
+}
+
+.wpp-icon img{
+  width: 18px;
+}
+
+#meio h2{
+  font-size: 12px;
+}
+
+/* Botão para rolar ao topo */
+
+#meio-ancora{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#meio-ancora button{
+  background-color: #2E69C5;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+
+
+
 
 /* FUNDO */
 #fundo{
   background-color: #EBEBEB;
   margin: 0px;
   padding: 10px 0px;
-
+  justify-content: center;
+  text-align: center;
 }
 
 #fundo p{
-  justify-content: center;
   color: rgb(0, 0, 0);
+  font-size: 10px;
 }
