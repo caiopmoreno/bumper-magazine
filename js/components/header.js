@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('components/menu/menu.html')
+  fetch('../../components/header.html')
     .then(response => response.text())
     .then(data => {
-      document.getElementById('menu').innerHTML = data;
+      document.getElementById('header').innerHTML = data;
 
       // Aqui depois eu boto a interatividade do menu
       document.querySelectorAll('nav ul li a').forEach(item => {
